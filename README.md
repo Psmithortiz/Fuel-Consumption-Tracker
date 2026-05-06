@@ -13,6 +13,10 @@ Developed as the Final Transversal Evaluation (EFT) for the Programming Fundamen
 - Filter vehicles with low efficiency (< 10 km/L)
 - Automatic persistence to `registros.txt`
 
+## Screenshot
+
+![Application running with low-efficiency filter](screenshot.png)
+
 ## Project Structure
 
 - `Main.java` — Swing GUI and business logic
