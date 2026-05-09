@@ -305,7 +305,9 @@ public class Main {
         if (!hayRegistros()) return;
         //CASO ESPECIAL DE SOLO 1 AUTO REGISTRADO
         if (patentes.size() == 1) {
-            JOptionPane.showMessageDialog(frame, "El vehiculo con patente " + patentes.get(0) + " tuvo un rendimiento de " + String.format("%.2f", calcularRendimiento(0)) + " km/L");
+            JOptionPane.showMessageDialog(frame,
+                    "Promedio de rendimiento: " + String.format("%.2f", calcularRendimiento(0)) + " km/L\n" +
+                            "(Solo hay 1 vehiculo registrado: " + patentes.get(0) + ")");
             return;
         }
         String extremos = Estadisticas.extremosCalcular(patentes, kilometrosRecorridos, litrosCargados);
